@@ -1,24 +1,21 @@
 package com.rps.player;
 
-import com.rps.game.Game;
 import com.rps.game.Move;
 import com.rps.game.Result;
-import com.rps.strategy.MoveStrategy;
 import com.rps.strategy.RockStrategy;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.util.Arrays;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.anyOf;
+import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.atLeastOnce;
-import static org.mockito.Mockito.verify;
 
 public class PlayerTest {
+
     @Test
     public void testComputerPlayerMove() {
         Player computerPlayer = new ComputerPlayer("Computer");

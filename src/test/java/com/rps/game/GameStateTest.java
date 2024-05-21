@@ -1,14 +1,8 @@
 package com.rps.game;
 
-import com.rps.player.ComputerPlayer;
-import com.rps.player.Player;
 import org.junit.jupiter.api.Test;
 
-import java.io.ByteArrayInputStream;
-import java.io.InputStream;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.*;
 
 public class GameStateTest {
 

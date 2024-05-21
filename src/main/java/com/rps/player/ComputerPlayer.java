@@ -1,6 +1,7 @@
 package com.rps.player;
 
 import com.rps.game.Move;
+import java.util.Random;
 
 public class ComputerPlayer extends Player {
 
@@ -10,7 +11,7 @@ public class ComputerPlayer extends Player {
 
     @Override
     public Move getMove() {
-        return Move.values()[(int) (Math.random() * 3)];
+        Random random = new Random();
+        return Move.values()[random.nextInt(Move.values().length)];
     }
 }
-

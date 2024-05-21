@@ -1,7 +1,7 @@
 package com.rps.game;
 
-import com.rps.player.Player;
 import com.rps.player.ComputerPlayer;
+import com.rps.player.Player;
 import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayInputStream;
